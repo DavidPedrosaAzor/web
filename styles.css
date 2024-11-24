@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 63px;
+    background-color: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex: 3;
+}
+
+.navbar a {
+    padding: 20px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.content {
+    padding-top: 80px;
+    padding: 100px 20px;
+}
+
+.header {
+    height: 60vh;
+    background: url('img/header.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+    justify-content: center;
+}
+
+.subjects {
+    padding: 50px 20px;
+    background: #1f1d1d;
+    color: #fff;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    background: #101010;
+    border-radius: 10px;
+    box-shadow: 0 0.3rem 5rem rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+    margin: 10px 0;
+}
+
+.box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #171717;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.price {
+    background: url('img/costos.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.contact {
+    padding: 50px 20px;
+    background: #171717;
+    color: #fff;
+}
+
+.map img {
+    max-width: 100%;
+    max-height: 100%; 
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .header {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .subjects {
+        padding: 30px 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .btn-home {
+        flex-direction: column;
+    }
+
+    .box {
+        width: calc(50% - 20px);
+    }
+
+    .map img {
+        margin-top: 20px;
+    }
+}
